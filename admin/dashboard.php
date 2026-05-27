@@ -24,7 +24,7 @@ $result_item = mysqli_query($koneksi, $query_item);
         <p><strong><?= htmlspecialchars($_SESSION['nama']); ?></strong><br>Developer</p>
         <hr>
         <ul>
-            <li><a href="item-tambah.php" style="color:white;">Configure (Tambah Item)</a></li>
+            <li><a href="products/tambah.php" class="btn">Tambah Item Baru</a></li>
             <li>Ban Player</li>
             <li>Kick Player</li>
             <li>Mute Settings</li>
@@ -55,8 +55,8 @@ $result_item = mysqli_query($koneksi, $query_item);
                             <td><?= formatRobux($row['harga']); ?></td>
                             <td><?= $row['stok']; ?></td>
                             <td>
-                                <a href="item-edit.php?id=<?= $row['id_product']; ?>">Edit</a> | 
-                                <a href="item-hapus.php?id=<?= $row['id_product']; ?>" onclick="return confirm('Hapus item?')">Hapus</a>
+                            <a href="products/edit.php?id=<?= $row['id_product']; ?>">Edit</a> | 
+                            <a href="products/products/hapus.php?id=<?= $row['id_product']; ?>" onclick="return confirm('Apakah Anda yakin ingin menghapus item ini?')">Hapus</a>
                             </td>
                         </tr>
                     <?php endwhile; ?>
