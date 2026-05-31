@@ -12,5 +12,5 @@ Tema:
 3. Lula Khaisha Delavia (Back-end Developer) - H1H024064
 
 ### Tautan Penting:
-* Link Desain Figma: 
+* Link Desain Figma: https://www.figma.com/design/jyjewflzDaovmif7EZteca/pemweb-blok?node-id=0-1&t=gapJAQGY7P6cVFZU-1
 * Link Website Ter-hosting: 
