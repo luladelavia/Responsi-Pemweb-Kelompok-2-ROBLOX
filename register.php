@@ -23,22 +23,45 @@ if (isset($_POST['register'])) {
 
 <!DOCTYPE html>
 <html lang="en">
-<head><title>Register - RoboShop</title></head>
+<head>
+    <title>Register - RoboShop</title>
+    <link rel="stylesheet" href="css/register.css">
+</head>
 <body>
-    <h2>CREATE ACCOUNT</h2>
-    <form action="" method="POST">
-        <input type="text" name="nama" placeholder="Roblox Username" required><br><br>
-        <input type="email" name="email" placeholder="Email Address" required><br><br>
-        <input type="password" name="password" placeholder="Password" required><br><br>
-        
-        <label>Daftar Sebagai:</label>
-        <select name="role" required>
-            <option value="pembeli">Pembeli (Player)</option>
-            <option value="penjual">Penjual (Creator/Admin)</option>
-        </select><br><br>
-        
-        <button type="submit" name="register">Submit Registration</button>
-    </form>
-    <p>Sudah punya akun? <a href="index.php">Login di sini</a></p>
+    <div class="container">
+        <header>
+            <h1><strong>ROBOSHOP</strong></h1>
+        </header>
+        <div class="content">
+            <h2>CREATE ACCOUNT</h2>
+            <p>Daftar akun baru untuk memulai berbelanja atau berjualan!</p>
+            <form action="" method="POST">
+                <div class="form-group">
+                    <input type="text" name="nama" id="nama" required>
+                    <label for="nama">Roblox Username</label>
+                </div>
+                <div class="form-group">
+                    <input type="email" name="email" id="email" required>
+                    <label for="email">Email Address</label>
+                </div>
+                <div class="form-group">
+                    <input type="password" name="password" id="password" required>
+                    <label for="password">Password</label>
+                </div>
+                <div class="form-group select-group">
+                    <label for="role">Daftar Sebagai:</label>
+                    <select name="role" id="role" required>
+                        <option value="">-- Pilih Role --</option>
+                        <option value="pembeli">Pembeli (Player)</option>
+                        <option value="penjual">Penjual (Creator/Admin)</option>
+                    </select>
+                </div>
+                <button type="submit" name="register">Submit Registration</button>
+            </form>
+            <p style="text-align: center; margin-top: 18px; color: #6b7280;">
+                Sudah punya akun? <a href="index.php" style="color: #2563eb; text-decoration: none; font-weight: 600;">Login di sini</a>
+            </p>
+        </div>
+    </div>
 </body>
 </html>

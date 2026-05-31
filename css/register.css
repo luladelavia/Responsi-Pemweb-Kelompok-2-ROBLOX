@@ -1,0 +1,138 @@
+body{
+    min-height: 100vh;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    color: black;
+    background: aliceblue;
+}
+
+.container{
+    width: 100%;
+    max-width: 40%;
+    background: white;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+header{
+    text-align: left;
+    padding: 24px 28px;
+}
+
+.content{
+    flex: 1;
+    padding: 30px 28px;
+    display: flex;
+    flex-direction: column;
+}
+
+h1{
+    margin: 0;
+    font-size: 2rem;
+    letter-spacing: 1px;
+}
+
+h2{
+    margin: 0 0 8px;
+    font-size: 1.7rem;
+}
+
+p{
+    margin: 0 0 26px;
+    color: grey;
+    line-height: 1.5;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+}
+
+.form-group{
+    text-align: left;
+    position: relative;
+    margin-bottom: 4px;
+}
+
+.select-group{
+    display: flex;
+    flex-direction: column;
+}
+
+.select-group label{
+    margin-bottom: 8px;
+    font-weight: 600;
+    color: #111827;
+    position: static;
+}
+
+select{
+    width: 100%;
+    padding: 12px 14px;
+    border: 1px solid lightgray;
+    border-radius: 12px;
+    font-size: 1rem;
+    outline: none;
+    box-sizing: border-box;
+    background: white;
+    cursor: pointer;
+    color: black;
+}
+
+label{
+    margin: -5px;
+    position: absolute;
+    top: 10px;
+    left: 14px;
+    color: black;
+    background: white;
+    color: grey;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"]{
+    width: 100%;
+    padding: 24px 14px 12px 14px;
+    border: 1px solid lightgray;
+    border-radius: 12px;
+    font-size: 1rem;
+    outline: none;
+    box-sizing: border-box;
+}
+
+input[type="text"]:focus ~ label,
+input[type="text"]:valid ~ label,
+input[type="email"]:focus ~ label,
+input[type="email"]:valid ~ label,
+input[type="password"]:focus ~ label,
+input[type="password"]:valid ~ label{
+    top: -8px;
+    font-size: 0.75rem;
+    color: blue;
+}
+
+button{
+    width: 100%;
+    padding: 12px 14px;
+    border: none;
+    border-radius: 12px;
+    background: blue;
+    color: white;
+    font-size: 1rem;
+    cursor: pointer;
+    font-weight: 600;
+    transition: background 0.3s ease;
+}
+
+button:hover{
+    background: rgb(55, 55, 166);
+}
+
+a{
+    color: blue;
+}

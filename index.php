@@ -38,26 +38,39 @@ if (isset($_POST['action_register'])) {
 
 <!DOCTYPE html>
 <html lang="en">
-<head><title>ROBOSHOP - Welcome</title></head>
+<head>
+    <title>ROBOSHOP - Welcome</title>
+    <link rel="stylesheet" href="css/index.css">
+</head>
 <body>
-    <h2>WELCOME</h2>
-    <p>Please Log in or Sign Up to your account!</p>
-
-    <form action="" method="POST">
-        <div>
-            <label>Email or Username</label><br>
-            <input type="text" name="email_or_user" required>
+    <div class="container">
+        <header>
+            <h1><strong>ROBOSHOP</strong></h1>
+        </header>
+        <div class="content">
+            <h2>WELCOME</h2>
+            <p>Please Log in or Sign Up to your account!</p>
+            <form action="" method="POST">
+                <div class="form-group">
+                    <label name="form">Email or Username</label>
+                    <input type="text" name="email_or_user" required>
+                </div>
+                <div class="form-group">
+                    <label name="form">Password</label>
+                    <input type="password" name="password" required>
+                </div>
+                <div class="form-group checkbox">
+                    <label>
+                        <input type="checkbox" name="remember">
+                        Remember Me
+                    </label>
+                </div>
+                <div class="button-group">
+                    <button type="submit" name="action_login">Login</button>
+                    <button type="submit" name="action_register">Create Account</button>
+                </div>
+            </form>
         </div>
-        <br>
-        <div>
-            <label>Password</label><br>
-            <input type="password" name="password" required>
-        </div>
-        <br>
-        <input type="checkbox" name="remember"> Remember Me
-        <br><br>
-        <button type="submit" name="action_login">Login</button>
-        <button type="submit" name="action_register">Create Account</button>
-    </form>
+    </div>
 </body>
 </html>
