@@ -13,4 +13,4 @@ Tema: Roboshop
 
 ### Tautan Penting:
 * Link Desain Figma: https://www.figma.com/design/jyjewflzDaovmif7EZteca/pemweb-blok?node-id=0-1&t=gapJAQGY7P6cVFZU-1
-* Link Website Ter-hosting: 
+* Link Website Ter-hosting: https://b2.athafa.cloud/roboshop2
