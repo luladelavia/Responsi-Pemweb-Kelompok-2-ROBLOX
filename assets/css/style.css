@@ -1,0 +1,37 @@
+:root {
+    --navy: #0A2540;
+    --tosca: #40E0D0;
+    --cream: #F4F4F9;
+    --white-box: #FFF8F0;
+    --soft-gray: #EAEAEA;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background-color: var(--cream);
+    color: #333;
+}
+
+.alert-error {
+    background: #ffdbdb;
+    color: #cc0000;
+    padding: 12px;
+    border-radius: 8px;
+    margin-bottom: 15px;
+    font-size: 14px;
+}
+
+.alert-success {
+    background: #e1f7e1;
+    color: #006600;
+    padding: 12px;
+    border-radius: 8px;
+    margin-bottom: 15px;
+    font-size: 14px;
+}
